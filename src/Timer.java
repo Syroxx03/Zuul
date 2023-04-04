@@ -14,7 +14,7 @@ public class Timer
     /** Creer un decompte et appelle un afficheur. Le decompte verifie a chaque boucle si gameEngine lui demande de s'arreter*/
     private void decompte()
     {
-        double vTimeRepere = System.currentTimeMillis();//temps au lancement du compteur         
+        double vTimeRepere = System.currentTimeMillis();//temps au lancement du compteur
         while(this.aGE.getEtatTimer()!=0)
         {
             if((int)((System.currentTimeMillis()-vTimeRepere)/1000)>=1)
